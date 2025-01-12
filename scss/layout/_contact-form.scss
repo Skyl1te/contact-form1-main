@@ -1,0 +1,9 @@
+@import '../abstracts/_variables.scss';
+
+.contact-form {
+	position: relative;
+	max-width: 1240px;
+	background-color: $White;
+	margin: 1rem;
+	border-radius: 1rem;
+}

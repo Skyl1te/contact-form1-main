@@ -1,3 +1,13 @@
+@import 'base/_base.scss';
 @import 'base/_reset.scss';
-@import 'pages/_form.scss';
-@import 'base/typography.scss';
+@import 'base/_typography.scss';
+@import 'base/_adaptive.scss';
+
+@import 'components/_success-message.scss';
+@import 'components/_radio-option.scss';
+
+@import 'layout/_contact-form.scss';
+@import 'layout/_container.scss';
+@import 'layout/_form.scss';
+
+@import 'pages/_form-item.scss';

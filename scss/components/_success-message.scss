@@ -1,0 +1,24 @@
+@import '../abstracts/_variables.scss';
+
+.success-message {
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+		background-color: $Grey-900;
+		padding: 1rem;
+		border-radius: .5rem;
+
+		&__header {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			color: $White;
+		}
+
+		&__description {
+			margin-top: 1rem;
+			color: $Grey-500;
+		}
+}

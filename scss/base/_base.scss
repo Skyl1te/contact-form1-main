@@ -1,0 +1,9 @@
+@import '../abstracts/_variables.scss';
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: $Green-200-lighter;
+}
