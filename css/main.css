@@ -167,7 +167,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/images/icon-radio-selected.svg");
+  background-image: url("../assets/images/icon-radio-selected.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
