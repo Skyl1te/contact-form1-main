@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="contact-form">
+    <div class="container">
+      <h1 class="primaty-title">Contact Us</h1>
+
+      <form class="form" id="form"> 
+        <div class="form-item">
+          <label for="firstName" class="form-item__label">
+            First Name <span class="form-item__required">*</span>
+          </label>
+          <input type="text" id="firstName" class="form-item__input">
+          <p class="form-item__alert">This field is required</p>
+        </div>
+        <div class="form-item">
+          <label for="lastName" class="form-item__label">
+            Last Name <span class="form-item__required">*</span>
+          </label>
+          <input type="text" id="lastName" class="form-item__input">
+          <p class="form-item__alert">This field is required</p>
+        </div>
+
+        <div class="form-item">
+          <label for="email" class="form-item__label">
+            Email Address <span class="form-item__required">*</span>
+          </label>
+          <input type="email" id="email" class="form-item__input">
+          <p class="form-item__alert">Please enter a valid email address</p>
+        </div>
+
+        <div class="form-item" id="radio-option">
+          <label for="#" class="form-item__label">
+            Query Type <span class="form-item__required">*</span>
+          </label>
+
+          <div class="radio-option">
+            <input type="radio" name="queryType" value="General Enquiry" id="generalEnquiry" class="radio-option__input">
+            <label for="generalEnquiry" class="radio-option__label form-item__label">
+              General Enquiry
+            </label>
+          </div>
+
+          <div class="radio-option">
+            <input type="radio" name="queryType" value="Support Request" id="supportRequest" class="radio-option__input">
+            <label for="supportRequest" class="radio-option__label form-item__label">
+              Support Request
+            </label>
+          </div>
+          
+          <p class="form-item__alert">Please select a query type</p>
+        </div>
+
+        <div class="form-item">
+          <label for="message" class="form-item__label">
+            Message <span class="form-item__required">*</span>
+          </label>
+          <textarea class="form-item__input" name="message" id="message" rows="12"></textarea>
+          <p class="form-item__alert">This field is required</p>
+        </div>
+
+        <div class="form-item">
+          <input type="checkbox" id="consent" name="consent" class="form-item__checkbox">
+          <label for="consent" class="form-item__label">
+            I consent to being contacted by the team <span class="form-item__required">*</span>
+          </label>
+          <p class="form-item__alert">To submit this form, please consent to being contacted</p>
+        </div>
+
+        <div class="form-item">
+          <button type="submit" id="submitBtn" class="form-item__submit-btn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="success-message" id="success-message">
+      <div class="success-message__header">
+        <img src="assets/images/icon-success-check.svg" alt="success icon">
+        <span>Message Sent!</span>
+      </div>
+      <p class="success-message__description">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </div>  
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
